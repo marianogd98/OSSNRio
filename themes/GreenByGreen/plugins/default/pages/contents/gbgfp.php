@@ -81,9 +81,9 @@ $sub	= ossn_site_settings('last_cache');
 											'format' => true,
 											));			
 											if(!com_is_active('DisableSignup')) {?>
-											<div class="buttons">
+											<!-- <div class="buttons">
 												<button id="open_create" type="button" class="button-grey frontpage"><?php echo ossn_print('create:account'); ?></button>
-											</div>
+											</div> -->
 											<?php
 											}
 											?>

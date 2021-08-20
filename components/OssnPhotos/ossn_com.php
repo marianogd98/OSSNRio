@@ -86,8 +86,8 @@ function ossn_photos_initialize() {
 				
 		}
 		//gallery plugin dist include
-		ossn_new_external_js('jquery.fancybox.min.js', 'vendors/jquery/js/jquery.fancybox.min.js', false);
-		ossn_new_external_css('jquery.fancybox.min.css', 'vendors/jquery/css/jquery.fancybox.min.css', false);
+		ossn_new_external_js('jquery.fancybox.min.js', 'http://172.50.3.35/directory/jquery/jquery.fancybox.min.js', false);
+		ossn_new_external_css('jquery.fancybox.min.css', 'http://172.50.3.35/directory/jquery/jquery.fancybox.min.css', false);
 }
 /**
  * Delete user photos

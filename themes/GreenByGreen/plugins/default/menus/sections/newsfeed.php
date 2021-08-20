@@ -20,7 +20,7 @@ foreach ($menus as $name => $menu) {
 	$item = 'menu-section-item-'.OssnTranslit::urlize($menu['text']).' ';
 
 	$expend = '';
-	$icon = "fa-angle-right";
+	$icon = "fa-users";
 	
 	if($name == 'personal'){
 		$expend = 'in';

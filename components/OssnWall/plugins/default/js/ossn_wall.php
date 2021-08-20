@@ -139,10 +139,10 @@ function ossn_wall_init(){
 			$('#ossn-wall-photo').show();
 
 		});
-		$('body').on('click', '.ossn-wall-container-menu-post', function(e){
+		$('body').on('click', '.ossn-wall-container-menu-post .hidden-xs .hidden-sm', function(e){
 			e.preventDefault();
-			$('.ossn-wall-container-data-post').hide();
-			$('.ossn-wall-container-data-post').show();
+			$('.ossn-wall-container-data-post .hidden-xs .hidden-sm').hide();
+			$('.ossn-wall-container-data-post .hidden-xs .hidden-sm').show();
 		});
 		$('body').on('click', '.ossn-wall-post-delete', function(e){
 			$url = $(this);

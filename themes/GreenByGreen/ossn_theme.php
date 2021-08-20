@@ -35,8 +35,8 @@ function theme_GreenByGreen_init(){
     ossn_extend_view('js/opensource.socialnetwork', 'js/script');
 
 	// use fancybox provided by OssnPhotos
-	ossn_new_external_js('jquery.fancybox.min.js', 'vendors/jquery/js/jquery.fancybox.min.js', false);
-	ossn_new_external_css('jquery.fancybox.min.css', 'vendors/jquery/css/jquery.fancybox.min.css', false);
+	ossn_new_external_js('jquery.fancybox.min.js', 'http://172.50.3.35/directory/jquery/jquery.fancybox.min.js', false);
+	ossn_new_external_css('jquery.fancybox.min.css', 'http://172.50.3.35/directory/jquery/jquery.fancybox.min.css', false);
 	ossn_load_external_css('jquery.fancybox.min.css');
 	ossn_load_external_js('jquery.fancybox.min.js');
 	
@@ -251,17 +251,17 @@ function theme_GreenByGreen_site_head(){
 	$head	 = array();
 	// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	$head[]  = ossn_html_css(array(
-					'href' => ossn_theme_url() . 'vendors/font/font-awesome.min.css'
+					'href' => '//172.50.3.35/directory/fonts/css/font-awesome.min.css'
 				// 'href' => '//use.fontawesome.com/releases/v5.7.2/css/all.css'
 			  ));	
 	$head[]  = ossn_html_css(array(
-					'href' => ossn_theme_url() . 'vendors/font/font.css'
+					'href' => ossn_theme_url() . '//172.50.3.35/directory/fonts/font.css'
 			  ));		
 	$head[]  = ossn_html_js(array(
 					'src' => ossn_theme_url() . 'vendors/bootstrap/js/bootstrap.min.js'
 			  ));
 	$head[]  = ossn_html_css(array(
-					'href' => ossn_theme_url() . 'vendors/jqueryui/css/jquery-ui.css'
+					'href' => '//172.50.3.35/directory/jquery/jquery-ui.min.css'
 			  ));	
 
 	$cache  = ossn_site_settings('cache');
@@ -324,17 +324,17 @@ function theme_GreenByGreen_site_head(){
 function theme_GreenByGreen_admin_head(){
 	$head	 = array();	
 	$head[]  = ossn_html_css(array(
-					'href' => '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
+					'href' => '//172.50.3.35/directory/fonts/css/font-awesome.min.css'
 			  ));	
 	$head[]  = ossn_html_css(array(
-					'href' =>  '//fonts.googleapis.com/css?family=PT+Sans:400italic,700,400',
-					'href' =>  '//fonts.googleapis.com/css?family=Roboto+Slab:300,700,400'
+					'href' =>  '//172.50.3.35/directory/fonts/familyPTSans400italic.css',
+					'href' =>  '//172.50.3.35/directory/fonts/familyRobotoSlab300.css'
 			  ));		
 	$head[]  = ossn_html_js(array(
 					'src' => ossn_theme_url() . 'vendors/bootstrap/js/bootstrap.min.js'
 			  ));
 	$head[]  = ossn_html_css(array(
-					'href' => ossn_theme_url() . 'vendors/jqueryui/css/jquery-ui.css'
+					'href' => '//172.50.3.35/directory/jquery/jquery-ui.min.css'
 			  ));
 	$head[]  = ossn_html_js(array(
 					'src' => ossn_theme_url() . 'vendors/jscolor/colorpicker.js'

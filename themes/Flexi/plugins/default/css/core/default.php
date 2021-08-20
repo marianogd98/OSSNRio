@@ -963,6 +963,7 @@ a {
 
 .text-right {
 	text-align: right;
+	margin-left: -25%;
 }
 
 .text-left {
@@ -971,6 +972,13 @@ a {
 
 .text-center {
 	text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+	.text-center{
+		text-align: center;
+	margin-left: 24%;
+	}
 }
 
 .margin-top-10 {

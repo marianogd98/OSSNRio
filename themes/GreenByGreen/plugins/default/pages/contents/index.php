@@ -38,9 +38,9 @@
            		'action' => ossn_site_url('action/user/login'),
     	    ));			
 			if(!com_is_active('DisableSignup')) {?>
-            <div class="buttons">
+            <!-- <div class="buttons">
 				<button id="open_create" type="button" class="button-grey frontpage"><?php echo ossn_print('create:account'); ?></button>
-            </div>
+            </div> -->
 			<?php
 			}
 			?>

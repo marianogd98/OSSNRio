@@ -119,7 +119,7 @@ if(isset($admin->file['tmp_name']) && $admin->typeAllowed()){
 					redirect(REF);
 			}
 			$contents = file_get_contents($file);
-			if(strlen($contents) > 0 && file_put_contents(ossn_route()->themes.'GreenByGreen/images/logo_admin.jpg', $contents)){
+			if(strlen($contents) > 0 && file_put_contents(ossn_route()->themes.'GreenByGreen/images/logotipografiahorizontal(pequeños)-png.png', $contents)){
 					$cache  = ossn_site_settings('cache');
 					if($cache == false) {
 							$done = true;

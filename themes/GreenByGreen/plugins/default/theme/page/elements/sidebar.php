@@ -8,7 +8,7 @@
 
 					<?php
 					echo ossn_view_form('GreenByGreen/search', array(
-								'class' => 'ossn-search',
+								'class' => 'ossn-search hidden-lg',
 								'autocomplete' => 'off',
 								'method' => 'get',
 								'security_tokens' => false,
@@ -17,11 +17,15 @@
 					/* */
 					?>
 					<div class="newseed-uinfo">
-						<a href="<?php echo ossn_loggedin_user()->profileURL(); ?>">
-						<img src="<?php echo ossn_loggedin_user()->iconURL()->small; ?>"/>
-						</a>
-						<div class="name">
-							<a href="<?php echo ossn_loggedin_user()->profileURL(); ?>"><?php echo ossn_loggedin_user()->fullname; ?></a>
+						<div class="col-md-12">
+							<a href="<?php echo ossn_loggedin_user()->profileURL(); ?>">
+								<img src="<?php echo ossn_loggedin_user()->iconURL()->small; ?>"/>
+							</a>
+						</div>
+						<div class="col-md-12">
+							<div class="name">
+								<a href="<?php echo ossn_loggedin_user()->profileURL(); ?>"><?php echo ossn_loggedin_user()->fullname; ?></a>
+							</div>
 						</div>
 					</div>
 					<?php 

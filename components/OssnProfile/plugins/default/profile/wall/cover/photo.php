@@ -38,7 +38,7 @@ $image = ossn_profile_coverphoto_wall_url($image);
                 <a href="<?php echo $params['user']->profileURL(); ?>">
                     <?php echo $params['user']->fullname; ?>
                 </a>
-                <i class="fa fa-angle-right fa-lg"></i>
+                <i class="fa fa-users fa-lg"></i>
                 <a href="<?php echo $owner->profileURL(); ?>"> <?php echo $owner->fullname; ?></a>
             <?php } ?>
 			</div>

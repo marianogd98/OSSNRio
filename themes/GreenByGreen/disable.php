@@ -51,7 +51,7 @@ if(!is_dir($dst_dir)) {
 	mkdir("{$dst_dir}", 0755, true);
 }
 $src_dir = ossn_route()->themes . 'GreenByGreen/images/';
-$files = array('favicon.ico', 'logo.png', 'logo_admin.jpg');
+$files = array('Logosintipografia-png.png', 'logo.png', 'logotipografiahorizontal(pequeños)-png.png');
 foreach($files as $file) {
 	if(!copy($src_dir . $file, $dst_dir . '/' . $file)) { 
 		error_log('GreenByGreen: Error saving ' . $dst_dir . '/' . $file);

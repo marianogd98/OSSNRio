@@ -48,7 +48,7 @@ if(!$params['user']){
             <?php if ($params['show_group'] == true) {
                 $group = ossn_get_group_by_guid($params['post']->owner_guid);
                 ?>
-               <i class="fa fa-angle-right fa-lg"></i>
+               <i class="fa fa-users fa-lg"></i>
                 <a class="owner-link"  href="<?php echo ossn_site_url("group/{$group->guid}"); ?>"> <?php echo $group->title; ?></a>
             <?php } ?>        
 			</div>

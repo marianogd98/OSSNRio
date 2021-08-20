@@ -26,7 +26,7 @@ if (isset($params['contents'])) {
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="<?php echo ossn_add_cache_to_url(ossn_theme_url().'images/favicon.ico');?>" type="image/x-icon" />	
+    <link rel="icon" href="<?php echo ossn_add_cache_to_url(ossn_theme_url().'images/Logosintipografia-png.png');?>" type="image/x-icon" />	
     <title><?php echo $title; ?></title>
     
  	<?php echo ossn_fetch_extend_views('ossn/endpoint'); ?>   
@@ -44,7 +44,7 @@ if (isset($params['contents'])) {
         	<div class="row">
             
         		<div class="col-md-6 col-sm-6 col-xs-6">
-					<img src="<?php echo ossn_theme_url(); ?>images/logo_admin.jpg"/>
+					<img src="<?php echo ossn_theme_url(); ?>images/logotipografiahorizontal(pequeños)-png.png"/>
             	</div>
                 <?php if(ossn_isAdminLoggedin()){ ?>
             	<div class="col-md-6  col-sm-6 col-xs-6 header-dropdown">
@@ -100,7 +100,7 @@ if (isset($params['contents'])) {
  				<?php echo ossn_print('copyright'); ?> <?php echo date("Y"); ?> <a href="<?php echo ossn_site_url(); ?>"><?php echo $site_name; ?></a>            			
            	 	</div>
                 <div class="col-md-6 text-right">
-                	 <?php echo 'POWERED <a href="http://www.opensource-socialnetwork.org">OPEN SOURCE SOCIAL NETWORK</a>'; ?>
+                	 <?php echo 'DESARROLLADO POR <a href="https://github.com/marianogd98">MARIANOGD98</a>'; ?>
                 </div>
         	</div>
         </footer>

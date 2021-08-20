@@ -11,7 +11,7 @@
 $postcontrols = $params['menu'];
 if($postcontrols){
 ?>
-<a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-link" data-target="#">
+<a id="dLabel" role="button" data-toggle="dropdown" class="btn2 btn-link" data-target="#">
 	<i class="fa fa-sort-desc"></i>
 </a>
 <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
@@ -27,7 +27,7 @@ if($postcontrols){
 						unset($link['name']);
 						$link = ossn_plugin_view('output/url', $link);						
                         ?>
-                        <li><?php echo $link; ?></li>
+                        <li></i><?php echo $link; ?></li>
                     <?php
                     }
                 }

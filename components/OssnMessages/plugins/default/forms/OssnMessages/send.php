@@ -7,5 +7,5 @@
                     echo ossn_plugin_view('input/security_token'); 
                     ?>
                     <div class="ossn-loading ossn-hidden"></div>                               
-                    <input type="submit" class="btn btn-primary" value="<?php echo ossn_print('send'); ?>"/>
+                    <button type="submit" class="btn btn-primary" value="<?php echo ossn_print('send'); ?>"/><i class="fa fa-share hidden-xs hidden-sm"></i>Enviar</button>
                 </div>

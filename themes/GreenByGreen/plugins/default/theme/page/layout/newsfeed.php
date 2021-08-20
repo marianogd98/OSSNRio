@@ -38,7 +38,7 @@ if(ossn_is_hook('newsfeed', "center:top")) {
 			</div>
 			<?php 
 			if(!empty($isempty)) { ?>
-			<div class="col-md-4">
+			<div class="col-md-4n">
 				<div class="newsfeed-right">
 					<?php
 						echo $sidebar;

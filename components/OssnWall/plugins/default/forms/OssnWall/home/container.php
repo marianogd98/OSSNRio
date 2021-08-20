@@ -12,18 +12,29 @@ if (!isset($params['user']->guid)) {
     $params['user'] = new stdClass;
     $params['user']->guid = '';
 }
+if(!ossn_isLoggedin()){
+    return;
+}
  ossn_load_external_js('places.min');
  ossn_load_external_js('jquery.tokeninput'); 
 ?>
-<div class="tabs-input">
+<div class="tabs-input col-md-3 col-lg-3 col-xl-3 col-xs-3 col-sm-3">
     <div class="wall-tabs">
+        <a href="<?php echo ossn_loggedin_user()->profileURL(); ?>">
+            <img class="user-img2" src="<?php echo ossn_loggedin_user()->iconURL()->small; ?>">
+        </a>
+        <div class="user2 hidden-xs hidden-sm">
+            <a href="<?php echo ossn_loggedin_user()->profileURL(); ?>"> <?php echo ossn_loggedin_user()->fullname; ?> </a>
+        </div>
         <?php
-			echo ossn_view_menu('wall/container/home', 'wall/menus/container'); 
+			// echo ossn_view_menu('wall/container/home', 'wall/menus/container'); 
 		?>
     </div>
 </div>
-<div class="ossn-wall-container-data ossn-wall-container-data-post" data-type="post">
+<div class="ossn-wall-container-data ossn-wall-container-data-post col-md-9 col-lg-9 col-xl-9 col-xs-9 col-sm-9" data-type="post">
     <textarea placeholder="<?php echo ossn_print('wall:post:container'); ?>" name="post"></textarea>
+</div>
+<div class="ossn-wall-container-data ossn-wall-container-data-post" data-type="post">
     <div id="ossn-wall-friend" style="display:none;">
         <input type="text" placeholder="<?php echo ossn_print('tag:friends'); ?>" name="friends" id="ossn-wall-friend-input" />
     </div>
@@ -39,7 +50,7 @@ if (!isset($params['user']->guid)) {
 		?>        
         <div style="float:right;">
             <div class="ossn-loading ossn-hidden"></div>
-            <input class="btn btn-primary ossn-wall-post" type="submit" value="<?php echo ossn_print('post'); ?>" />
+            <button class="btn btn-primary ossn-wall-post" type="submit" value="<?php echo ossn_print('post'); ?>" /><i class="fa fa-share hidden-xs hidden-sm"></i>Publicar</button>
         </div>
         <li class="ossn-wall-privacy">
             <span><i class="ossn-wall-privacy-lock fa fa-lock"></i><span class="hidden-xs"><?php echo ossn_print('privacy'); ?></span></span>

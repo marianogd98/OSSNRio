@@ -15,5 +15,5 @@
 	<div>
 	<input type="text" name="username" class="form-control" placeholder="<?php echo ossn_print('username'); ?>" />
 	<input type="password" name="password" class="form-control" placeholder="<?php echo ossn_print('password'); ?>" />
-	<input type="submit" value="<?php echo ossn_print('site:login');?>" class="button-grey frontpage" /> 
+	<input type="submit" value="<?php echo ossn_print('site:login');?>" class="button-green frontpage" /> 
 	</div>

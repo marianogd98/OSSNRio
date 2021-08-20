@@ -181,8 +181,17 @@ label {
 }
 .text-right {
 	text-align:right;
+  margin-left: -25%;
 }
-
+.text-rightG {
+  text-align:right;
+}
+@media only screen and(max-width: 992px){
+  .text-rightG {
+    text-align: right;
+    margin-left: -25%;
+  }
+}
 .ossn-users-list {
 	font-family: monospace;
 }
@@ -276,6 +285,15 @@ footer a {
 }
 .text-right {
 	text-align:right;
+}
+.text-rightG {
+  text-align:right;
+}
+@media only screen and(max-width: 992px){
+  .text-rightG {
+    text-align: right;
+    margin-left: -25%;
+  }
 }
 .loading-version {
 	background:url('<?php echo ossn_theme_url(); ?>images/loading.gif') no-repeat;

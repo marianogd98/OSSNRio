@@ -65,7 +65,7 @@ img.ustatus.ossn-chat-icon-online {
 	background-color: #7A8D81;
 }
 .ossn-search {
-	border-color: #7A8D81;
+	border-color: white;
 }
 .tooltip .tooltip-inner,
 .newseed-uinfo .name a,
@@ -85,7 +85,7 @@ li[class^="menu-section-item-"] {
 .sidebar-menu-nav li,
 .sidebar-menu-nav ul .sub-menu li,
 .sidebar-menu-nav li .sub-menu li {
-	border-bottom-color: #23282E;
+	border-bottom-color: white;
 }
 /* page */
 body {
@@ -244,9 +244,7 @@ select:not([class*="ui-datepicker-"]),
 .profile-hr-menu ul li a:hover,
 .dropdown-menu>li>a:focus,
 .dropdown-menu>li>a:hover,
-.ossn-wall-container .wall-tabs,
 .ossn-wall-container .controls,
-.ossn-wall-item .meta,
 .comments-list,
 .comments-list .comments-item,
 .comment-contents,

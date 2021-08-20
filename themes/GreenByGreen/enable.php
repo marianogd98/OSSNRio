@@ -51,7 +51,7 @@ if(is_dir($src_dir)) {
 
 	$src_dir = ossn_get_userdata() . 'themes/GreenByGreen/images/';
 	$dst_dir = ossn_route()->themes . 'GreenByGreen/images/';
-	$files = array('favicon.ico', 'logo.png', 'logo_admin.jpg');
+	$files = array('Logosintipografia-png.png', 'logo.png', 'logotipografiahorizontal(pequeños)-png');
 	foreach($files as $file) {
 		if (file_exists($src_dir . $file)) {
 			if(!copy($src_dir . $file, $dst_dir . $file)) { 

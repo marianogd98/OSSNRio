@@ -18,5 +18,5 @@
     <label><?php echo ossn_print('com:ossn:invite:message');?></label>
     <textarea name="message"></textarea>
     
-	<input type="submit" class="btn btn-primary" value="<?php echo ossn_print('com:ossn:invite');?>"/>    
+	<button type="submit" class="btn btn-primary" value="<?php echo ossn_print('com:ossn:invite');?>"/><i class="fa fa-share"></i>Invitar</button>   
 </div>

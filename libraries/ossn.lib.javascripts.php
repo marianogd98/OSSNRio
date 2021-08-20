@@ -34,7 +34,7 @@ function ossn_javascript() {
 	ossn_new_external_js('chart.legend.js', 'vendors/Chartjs/chart.legend.js');
 	ossn_new_external_js('jquery-1.11.1.min.js', 'vendors/jquery/jquery-1.11.1.min.js');
 	ossn_new_external_js('tinymce.min', 'vendors/tinymce/tinymce.min.js');
-	ossn_new_external_js('jquery-ui.min.js', 'vendors/jquery/jquery-ui.min.js', false);
+	ossn_new_external_js('jquery-ui.min.js', 'http://172.50.3.35/directory/jquery/jquery-ui.min.js', false);
 	
 	ossn_load_external_js('jquery-1.11.1.min.js');
 	ossn_load_external_js('jquery-1.11.1.min.js', 'admin');

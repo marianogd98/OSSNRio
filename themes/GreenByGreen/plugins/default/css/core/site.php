@@ -534,7 +534,9 @@ p {
 	font-size: 15px;
 }
 
-.ossn-wall-container .tabs-input {}
+.ossn-wall-container .tabs-input {
+	border-radius: 10px;
+}
 
 .ossn-wall-container .controls li {
 	padding: 10px;
@@ -965,12 +967,28 @@ option:hover {
 	text-align: right;
 }
 
+.text-rightG {
+	text-align:right;
+}
+
+@media only screen and(max-width: 992px) {
+	.text-rightG {
+		text-align: right;
+		margin-left: -25%;
+	}
+}
+
 .text-left {
 	text-align: left;
 }
 
 .text-center {
 	text-align: center;
+}
+
+.text-centerG{
+	text-align:center;
+	margin-left: 24%;
 }
 
 .margin-top-10 {
@@ -1489,7 +1507,7 @@ option:hover {
 
 .menu-section-groups i:before {
     font-family: FontAwesome;
-    content: "\f228";
+    content: "\f2b5";
 }
 
 .menu-section-item-newsfeed:before {
@@ -1501,7 +1519,7 @@ option:hover {
 }
 
 .menu-section-item-allgroups:before {
-	content: "\f228" !important;
+	content: "\f2b5" !important;
 }
 
 .menu-section-item-photos:before {
@@ -1561,7 +1579,7 @@ li[class^="menu-section-item-"] {
 
 .ossn-menu-search-groups .text:before {
 	font-family: FontAwesome;
-	content: "\f228";
+	content: "\f2b5";
 	display: absolute;
 	padding-right: 10px;
 	vertical-align: middle;
@@ -2810,7 +2828,7 @@ footer .ossn-footer-menu a:last-child::after {
 }
 
 .menu-section-item-mygroups:before {
-	content: "\f228" !important
+	content: "\f2b5" !important
 }
 
 .menu-section-item-friendsonline:before {

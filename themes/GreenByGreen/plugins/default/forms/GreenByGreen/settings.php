@@ -65,7 +65,7 @@
     	<label><?php echo ossn_print('theme:greenbygreen:logo:admin');?> (180 x 45 | 500 kB jpg)</label>
         <input type="file" name="logo_admin" />
         <div class="admin-logo-container-greenbygreen">
-	        <img src="<?php echo ossn_theme_url();?>images/logo_admin.jpg" />
+	        <img src="<?php echo ossn_theme_url();?>images/logotipografiahorizontal(pequeños)-png.png" />
         </div>
     </div>   
 	<input type="submit" class="btn btn-success btn-sm" value="<?php echo ossn_print('save');?>"/>

@@ -26,7 +26,7 @@ if($groups) {
 	<div class="ossn-page-contents">
 		<div class="ossn-widget">
 			<div class="widget-heading">
-				<i class="fa fa-venus-mars"></i> <?php echo ossn_print('theme:greenbygreen:section:menu:mygroups'); ?>
+				<i class="fa fa-handshake-o"></i> <?php echo ossn_print('theme:greenbygreen:section:menu:mygroups'); ?>
 			</div>
 			<div class="widget-contents">
 			<?php

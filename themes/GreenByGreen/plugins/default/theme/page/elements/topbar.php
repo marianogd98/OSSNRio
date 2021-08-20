@@ -13,12 +13,21 @@ if(ossn_isLoggedin()){
 				</div>
 			</div>
 			<div class="col-md-7 site-name text-center hidden-sm hidden-xs">
-				<span><a href="<?php echo ossn_site_url('home');?>"><i class="fa fa-home"></i>&nbsp;&nbsp;<?php echo ossn_site_settings('site_name');?></a></span>
+				<span><a href="<?php echo ossn_site_url('home');?>"><i class="fa fa-home"></i>&nbsp;&nbsp;<?php echo ossn_site_settings('site_name');?></a>
+					<form class="ossn-form ossn-searchtop" autocomplete="off" method="get" action="http://172.50.3.35/ossn/search" enctype="multipart/form-data">
+						<fieldset>
+							<div>
+								<input type="text" name="q" placeholder="Buscar" onblur="if (this.value=='') { this.value=Ossn.Print('ossn:search'); }" onfocus="if (this.value==Ossn.Print('ossn:search')) { this.value='' };">
+								<span id="gbg-site-search" class="fa fa-search fa-lg gbg-search-magnifying-glass"></span>
+							</div>
+						</fieldset>
+					</form>
+				</span>
 			</div>
-			<div class="hidden-lg hidden-md site-name text-center col-sm-2 col-xs-2">
+			<div class="hidden-lg hidden-md site-name text-centerG col-sm-2 col-xs-2">
 				<a href="<?php echo ossn_site_url('home');?>"><i class="fa fa-home"></i></a>
 			</div>
-			<div class="col-md-3 col-xs-8 text-right right-side">
+			<div class="col-md-3 col-xs-8 text-rightG right-side">
 				<div class="topbar-menu-right">
 					<ul>
 					<li class="ossn-topbar-dropdown-menu">
